@@ -31,4 +31,7 @@ Route::resource('mahasiswa', 'MahasiswaController', [
 
 Route::get('mahasiswa/{mahasiswa}/delete', 'MahasiswaController@destroy')->name('mahasiswa.destroy');
 
+Route::get('fibonnacci', 'FibonacciController@index')->name('fibonacci.index');
+Route::post('fibonnacci', 'FibonacciController@fibonnacciCount')->name('fibonacci.count');
+
 Route::get('/home', 'HomeController@index')->name('home');
