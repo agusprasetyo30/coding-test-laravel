@@ -10,9 +10,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
    <meta name="csrf-token" content="{{ csrf_token() }}">
 	<title>@yield('title')</title>
 
-	<!-- Google Font: Source Sans Pro -->
-	{{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"> --}}
-	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="{{ asset('vendor/adminlte3/plugins/fontawesome-free/css/all.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('vendor/adminlte3/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('vendor/adminlte3/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
@@ -31,13 +28,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<link rel="stylesheet" href="{{ asset('vendor/adminlte3/dist/css/adminlte.min.css') }}">
 
 	<style>
-		/* .nav-header {
-			color: #2aabe8;
-			font-weight: bold;
-			font-size: 15px;
-			padding: .5rem .75rem;
-		} */
-
 		.nav-item .nav-link p{
 			font-size: 14px;
 		}
@@ -69,32 +59,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 	<div class="wrapper">
-
-	<!-- Navbar -->
-	<nav class="main-header navbar navbar-expand navbar-white navbar-light">
-		@include('layouts.include._navbar')		
-	</nav>
-	<!-- /.navbar -->
-
-	<!-- Main Sidebar Container -->
-	<aside class="main-sidebar sidebar-dark-primary elevation-4">
-		@include('layouts.include._sidebar')
-		<!-- /.sidebar -->
-	</aside>
-
 	<!-- Content Wrapper. Contains page content -->
-	<div class="content-wrapper" style="min-height: 280px">
-		@include('layouts.include._header_content')
-
 		<!-- Main content -->
 		<div class="content">
-			<div class="container-fluid">
+			<div class="container">
 				@yield('content')
 			</div>
 		</div>
-	</div>
-	
-	@include('layouts.include._footer')
 </div>
 <!-- ./wrapper -->
 
