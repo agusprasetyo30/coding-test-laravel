@@ -18,7 +18,7 @@ class FibonacciController extends Controller
 
         $count = $request->count;
         
-        $arr_data = [0, 1]; // Default
+        $arr_data = [$last_number, $current_number]; // Default 0 dan 1
         
         for ($i=0; $i < $count - 2; $i++) { // dikurangi 2 dikarenakan ada default 2 angka yaitu 0 dan 1 
             $output = $current_number + $last_number;

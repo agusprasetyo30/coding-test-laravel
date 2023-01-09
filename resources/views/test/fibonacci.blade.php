@@ -13,7 +13,7 @@
 					@csrf
 					<div class="form-group">
 						<label for="input">Data Count</label>
-						<input type="text" name="count" id="input" class="form-control" value="{{ $count }}">
+						<input type="text" name="count" id="input" class="form-control" value="{{ $count ?? '' }}">
 						
 						<input type="submit" value="Hitung" class="btn btn-primary btn-block btn-sm mt-2">
 					</div>
